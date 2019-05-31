@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_28_112352) do
+ActiveRecord::Schema.define(version: 2019_05_30_131415) do
 
   create_table "hotels", force: :cascade do |t|
     t.string "location"
     t.integer "price"
     t.string "name"
+    t.integer "total_room_number"
   end
 
   create_table "reviews", force: :cascade do |t|
